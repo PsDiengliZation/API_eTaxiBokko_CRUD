@@ -18,15 +18,18 @@ use Symfony\Component\Routing\Annotation\Route;
 
 class ChauffeurController extends AbstractController
 {
-    #[Route('/', name: 'chauffeur_index', methods: ['GET'])]
+    /**
+    * @Route("/", name="chauffeur_index", methods={"GET"})
+    */
     public function index(ChauffeurRepository $chauffeurRepository): Response
     {
         return $this->render('chauffeur/index.html.twig', [
             'chauffeurs' => $chauffeurRepository->findAll(),
         ]);
     }
-
-    #[Route('/new', name: 'chauffeur_new', methods: ['GET', 'POST'])]
+    /**
+    @Route('/new', name: 'chauffeur_new', methods: ['GET', 'POST'])]
+     */
     public function new(Request $request): Response
     {
         $chauffeur = new Chauffeur();
@@ -47,7 +50,7 @@ class ChauffeurController extends AbstractController
         ]);
     }
 
-    #[Route('/{id}', name: 'chauffeur_show', methods: ['GET'])]
+    @Route('/{id}', name: 'chauffeur_show', methods: ['GET'])]
     public function show(Chauffeur $chauffeur): Response
     {
         return $this->render('chauffeur/show.html.twig', [
@@ -55,7 +58,7 @@ class ChauffeurController extends AbstractController
         ]);
     }
 
-    #[Route('/{id}/edit', name: 'chauffeur_edit', methods: ['GET', 'POST'])]
+    @Route('/{id}/edit', name: 'chauffeur_edit', methods: ['GET', 'POST'])]
     public function edit(Request $request, Chauffeur $chauffeur): Response
     {
         $form = $this->createForm(ChauffeurType::class, $chauffeur);
@@ -73,7 +76,7 @@ class ChauffeurController extends AbstractController
         ]);
     }
 
-    #[Route('/{id}', name: 'chauffeur_delete', methods: ['POST'])]
+    @Route('/{id}', name: 'chauffeur_delete', methods: ['POST'])]
     public function delete(Request $request, Chauffeur $chauffeur): Response
     {
         if ($this->isCsrfTokenValid('delete'.$chauffeur->getId(), $request->request->get('_token'))) {
