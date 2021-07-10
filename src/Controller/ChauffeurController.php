@@ -27,8 +27,9 @@ class ChauffeurController extends AbstractController
             'chauffeurs' => $chauffeurRepository->findAll(),
         ]);
     }
-
+    /**
     @Route('/new', name: 'chauffeur_new', methods: ['GET', 'POST'])]
+     */
     public function new(Request $request): Response
     {
         $chauffeur = new Chauffeur();
