@@ -5,7 +5,7 @@
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'reference' => '73b27c50a467a2fe93983fd9d545b16b6b7eca6e',
+        'reference' => '33aaed3e5300c1a60025e73bade130b803d2552c',
         'name' => '__root__',
         'dev' => true,
     ),
@@ -16,7 +16,7 @@
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
-            'reference' => '73b27c50a467a2fe93983fd9d545b16b6b7eca6e',
+            'reference' => '33aaed3e5300c1a60025e73bade130b803d2552c',
             'dev_requirement' => false,
         ),
         'api-platform/core' => array(
@@ -191,12 +191,12 @@
             'dev_requirement' => false,
         ),
         'fig/link-util' => array(
-            'pretty_version' => '1.1.2',
-            'version' => '1.1.2.0',
+            'pretty_version' => '1.2.0',
+            'version' => '1.2.0.0',
             'type' => 'library',
             'install_path' => __DIR__ . '/../fig/link-util',
             'aliases' => array(),
-            'reference' => '5d7b8d04ed3393b4b59968ca1e906fb7186d81e8',
+            'reference' => '10e52348a2e9ad4581f2bf3e16458f0861a88c6a',
             'dev_requirement' => false,
         ),
         'friendsofphp/proxy-manager-lts' => array(
@@ -209,30 +209,12 @@
             'dev_requirement' => false,
         ),
         'laminas/laminas-code' => array(
-            'pretty_version' => '3.4.1',
-            'version' => '3.4.1.0',
+            'pretty_version' => '4.4.2',
+            'version' => '4.4.2.0',
             'type' => 'library',
             'install_path' => __DIR__ . '/../laminas/laminas-code',
             'aliases' => array(),
-            'reference' => '1cb8f203389ab1482bf89c0e70a04849bacd7766',
-            'dev_requirement' => false,
-        ),
-        'laminas/laminas-eventmanager' => array(
-            'pretty_version' => '3.3.1',
-            'version' => '3.3.1.0',
-            'type' => 'library',
-            'install_path' => __DIR__ . '/../laminas/laminas-eventmanager',
-            'aliases' => array(),
-            'reference' => '966c859b67867b179fde1eff0cd38df51472ce4a',
-            'dev_requirement' => false,
-        ),
-        'laminas/laminas-zendframework-bridge' => array(
-            'pretty_version' => '1.3.0',
-            'version' => '1.3.0.0',
-            'type' => 'library',
-            'install_path' => __DIR__ . '/../laminas/laminas-zendframework-bridge',
-            'aliases' => array(),
-            'reference' => '13af2502d9bb6f7d33be2de4b51fb68c6cdb476e',
+            'reference' => '54251ab2b16c41c6980387839496b235f5f6e10b',
             'dev_requirement' => false,
         ),
         'monolog/monolog' => array(
@@ -407,12 +389,12 @@
             'dev_requirement' => true,
         ),
         'psr/cache' => array(
-            'pretty_version' => '1.0.1',
-            'version' => '1.0.1.0',
+            'pretty_version' => '2.0.0',
+            'version' => '2.0.0.0',
             'type' => 'library',
             'install_path' => __DIR__ . '/../psr/cache',
             'aliases' => array(),
-            'reference' => 'd11b50ad223250cf17b86e38383413f5a6764bf8',
+            'reference' => '213f9dbc5b9bfbc4f8db86d2838dc968752ce13b',
             'dev_requirement' => false,
         ),
         'psr/cache-implementation' => array(
@@ -458,12 +440,12 @@
             ),
         ),
         'psr/link' => array(
-            'pretty_version' => '1.0.0',
-            'version' => '1.0.0.0',
+            'pretty_version' => '1.1.1',
+            'version' => '1.1.1.0',
             'type' => 'library',
             'install_path' => __DIR__ . '/../psr/link',
             'aliases' => array(),
-            'reference' => 'eea8e8662d5cd3ae4517c9b864493f59fca95562',
+            'reference' => '846c25f58a1f02b93a00f2404e3626b6bf9b7807',
             'dev_requirement' => false,
         ),
         'psr/link-implementation' => array(
@@ -1375,18 +1357,6 @@
             'aliases' => array(),
             'reference' => '04e14f38d4edfcc974114a07d2777d90c98f3d9c',
             'dev_requirement' => false,
-        ),
-        'zendframework/zend-code' => array(
-            'dev_requirement' => false,
-            'replaced' => array(
-                0 => '3.4.1',
-            ),
-        ),
-        'zendframework/zend-eventmanager' => array(
-            'dev_requirement' => false,
-            'replaced' => array(
-                0 => '^3.2.1',
-            ),
         ),
     ),
 );
