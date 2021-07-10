@@ -1,0 +1,54 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Liste de nos Chauffeurs{% endblock %}
+
+{% block body %}
+    <h1>Liste de nos Chauffeurs</h1>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Nom</th>
+                <th>Prenom</th>
+                <th>Telephone</th>
+                <th>Login</th>
+                <th>Mdp</th>
+                <th>Permis</th>
+                <th>Cni</th>
+                <th>actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for chauffeur in chauffeurs %}
+            <tr>
+                <td>{{ chauffeur.id }}</td>
+                <td>{{ chauffeur.nom }}</td>
+                <td>{{ chauffeur.prenom }}</td>
+                <td>{{ chauffeur.telephone }}</td>
+                <td>{{ chauffeur.login }}</td>
+                <td>{{ chauffeur.mdp }}</td>
+                <td>{{ chauffeur.permis }}</td>
+                <td>{{ chauffeur.cni }}</td>
+                <td>
+                        <button class="btn btn-primary">
+                            <a href="{{ path('chauffeur_show', {'id': chauffeur.id}) }}">Visualiser</a>
+                        </button>
+
+                       <button class="btn btn-success">
+                            <a href="{{ path('chauffeur_edit', {'id': chauffeur.id}) }}">Editer</a>
+                       </button>
+                </td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="12">Aucun enregistrement trouvé</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+     <button type="button" class="btn btn-lg btn-dark">
+        <a href="{{ path('chauffeur_new') }}">Nouveau Chauffeur</a>
+     </button>
+{% endblock %}

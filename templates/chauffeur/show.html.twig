@@ -1,0 +1,53 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Chauffeur{% endblock %}
+
+{% block body %}
+    <h1>Espace Chauffeur</h1>
+
+    <table class="table">
+        <tbody>
+            <tr>
+                <th>Id</th>
+                <td>{{ chauffeur.id }}</td>
+            </tr>
+            <tr>
+                <th>Nom</th>
+                <td>{{ chauffeur.nom }}</td>
+            </tr>
+            <tr>
+                <th>Prenom</th>
+                <td>{{ chauffeur.prenom }}</td>
+            </tr>
+            <tr>
+                <th>Telephone</th>
+                <td>{{ chauffeur.telephone }}</td>
+            </tr>
+            <tr>
+                <th>Login</th>
+                <td>{{ chauffeur.login }}</td>
+            </tr>
+            <tr>
+                <th>Mdp</th>
+                <td>{{ chauffeur.mdp }}</td>
+            </tr>
+            <tr>
+                <th>Permis</th>
+                <td>{{ chauffeur.permis }}</td>
+            </tr>
+            <tr>
+                <th>Cni</th>
+                <td>{{ chauffeur.cni }}</td>
+            </tr>
+        </tbody>
+    </table>
+    <button class="btn btn-warning">
+         <a href="{{ path('chauffeur_index') }}">Voir la Liste</a>
+    </button>
+
+    <button class="btn btn-success">
+         <a href="{{ path('chauffeur_edit', {'id': chauffeur.id}) }}">Editer</a>
+    </button>
+
+    {{ include('chauffeur/_delete_form.html.twig') }}
+{% endblock %}

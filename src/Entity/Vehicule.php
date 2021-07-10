@@ -4,9 +4,11 @@ namespace App\Entity;
 
 use App\Repository\VehiculeRepository;
 use Doctrine\ORM\Mapping as ORM;
+use ApiPlatform\Core\Annotation\ApiResource;
 
 /**
  * @ORM\Entity(repositoryClass=VehiculeRepository::class)
+ * @ApiResource()
  */
 class Vehicule
 {
