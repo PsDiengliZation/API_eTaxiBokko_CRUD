@@ -471,6 +471,6 @@ class __TwigTemplate_1441d503513a0d3482b383bbb13f94347ab893e5017c2c20bd7856a2522
         </div>
     {% endif %}
 {% endblock %}
-", "@WebProfiler/Collector/twig.html.twig", "C:\\Users\\PapaSidy\\OneDrive\\Bureau\\Simplon_ONFP\\Projects\\etaxi\\vendor\\symfony\\web-profiler-bundle\\Resources\\views\\Collector\\twig.html.twig");
+", "@WebProfiler/Collector/twig.html.twig", "C:\\Users\\PapaSidy\\OneDrive\\Bureau\\Simplon_ONFP\\Projects\\API_eTaxiBokko_CRUD\\vendor\\symfony\\web-profiler-bundle\\Resources\\views\\Collector\\twig.html.twig");
     }
 }

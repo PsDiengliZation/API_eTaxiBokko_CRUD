@@ -135,6 +135,6 @@ class __TwigTemplate_d02cfd6faa84987817acfc470d308338e88f08ef0a2941bbf3b71e69f0f
         {% endfor %}
     </tbody>
 </table>
-", "@WebProfiler/Profiler/bag.html.twig", "C:\\Users\\PapaSidy\\OneDrive\\Bureau\\Simplon_ONFP\\Projects\\etaxi\\vendor\\symfony\\web-profiler-bundle\\Resources\\views\\Profiler\\bag.html.twig");
+", "@WebProfiler/Profiler/bag.html.twig", "C:\\Users\\PapaSidy\\OneDrive\\Bureau\\Simplon_ONFP\\Projects\\API_eTaxiBokko_CRUD\\vendor\\symfony\\web-profiler-bundle\\Resources\\views\\Profiler\\bag.html.twig");
     }
 }

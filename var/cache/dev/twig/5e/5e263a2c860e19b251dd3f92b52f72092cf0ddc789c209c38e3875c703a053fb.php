@@ -898,6 +898,6 @@ class __TwigTemplate_a393584eb868a8d389b126d8b9fa08f3769f843eb81332909cc9f777bbd
         </tbody>
     </table>
 {% endmacro %}
-", "@WebProfiler/Collector/translation.html.twig", "C:\\Users\\PapaSidy\\OneDrive\\Bureau\\Simplon_ONFP\\Projects\\etaxi\\vendor\\symfony\\web-profiler-bundle\\Resources\\views\\Collector\\translation.html.twig");
+", "@WebProfiler/Collector/translation.html.twig", "C:\\Users\\PapaSidy\\OneDrive\\Bureau\\Simplon_ONFP\\Projects\\API_eTaxiBokko_CRUD\\vendor\\symfony\\web-profiler-bundle\\Resources\\views\\Collector\\translation.html.twig");
     }
 }

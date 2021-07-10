@@ -10,7 +10,12 @@ use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 
-#[Route('/chauffeur')]
+
+
+/**
+ * @Route("/chauffeur")
+ */
+
 class ChauffeurController extends AbstractController
 {
     #[Route('/', name: 'chauffeur_index', methods: ['GET'])]
