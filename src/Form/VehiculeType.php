@@ -3,6 +3,7 @@
 namespace App\Form;
 
 use App\Entity\Vehicule;
+use Symfony\Bridge\Doctrine\Form\Type\EntityType;
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
@@ -18,7 +19,10 @@ class VehiculeType extends AbstractType
             ->add('nbrePlace')
             ->add('visiteTechnique')
             ->add('assurance')
-            ->add('proprietaire')
+            ->add('proprietaire', EntityType::class, [
+                'class' => Vehicule::class,
+                'choice_label' => 'id'
+        ])
         ;
     }
 
