@@ -1,0 +1,15 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Modification Chauffeur{% endblock %}
+
+{% block body %}
+    <h1>Editer Chauffeur</h1>
+
+    {{ include('chauffeur/_form.html.twig', {'button_label': 'Update'}) }}
+
+        <button class="btn btn-warning">
+            <a href="{{ path('chauffeur_index') }}">Voir la Liste</a>
+        </button>
+
+    {{ include('chauffeur/_delete_form.html.twig') }}
+{% endblock %}

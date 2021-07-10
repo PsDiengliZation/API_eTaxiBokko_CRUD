@@ -62,6 +62,18 @@ return [[
 '[C]Symfony%5CBundle%5CFrameworkBundle%5CController%5CAbstractController%23addLink' => 1,
 'Symfony%5CBundle%5CFrameworkBundle%5CController%5CAbstractController%24container' => 0,
 '[C]Symfony%5CBundle%5CFrameworkBundle%5CController%5CAbstractController%24container' => 1,
+'App%5CController%5CChauffeurController' => 0,
+'[C]App%5CController%5CChauffeurController' => 1,
+'App%5CController%5CChauffeurController%23index' => 0,
+'[C]App%5CController%5CChauffeurController%23index' => 1,
+'App%5CController%5CChauffeurController%23new' => 0,
+'[C]App%5CController%5CChauffeurController%23new' => 1,
+'App%5CController%5CChauffeurController%23show' => 0,
+'[C]App%5CController%5CChauffeurController%23show' => 1,
+'App%5CController%5CChauffeurController%23edit' => 0,
+'[C]App%5CController%5CChauffeurController%23edit' => 1,
+'App%5CController%5CChauffeurController%23delete' => 0,
+'[C]App%5CController%5CChauffeurController%23delete' => 1,
 'App%5CEntity%5CChauffeur' => 2,
 '[C]App%5CEntity%5CChauffeur' => 1,
 'App%5CEntity%5CChauffeur%23__construct' => 0,
@@ -708,7 +720,7 @@ return [[
 ], [
 
 0 => [],
-1 => 1625927603,
+1 => 1625929786,
 2 => static function () {
     return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
         $o = [
