@@ -7,6 +7,8 @@ use Symfony\Bridge\Doctrine\Form\Type\EntityType;
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
+use Symfony\Component\Form\Extension\Core\Type\ChoiceType;
+
 
 class VehiculeType extends AbstractType
 {
@@ -17,8 +19,22 @@ class VehiculeType extends AbstractType
             ->add('modele')
             ->add('marque')
             ->add('nbrePlace')
-            ->add('visiteTechnique')
-            ->add('assurance')
+            ->add('visiteTechnique', ChoiceType::class, [
+                'choices'  => [
+                    'A Jour' => 'A Jour',
+                    'Pas à jour' => 'Pas à jour',
+                
+                    
+                ],
+            ])
+            ->add('assurance', ChoiceType::class, [
+                'choices'  => [
+                    'Valide' => 'Valide',
+                    'Invalide' => 'Invalide',
+                    
+                    
+                ],
+            ])
             ->add('proprietaire', EntityType::class, [
                 'class' => Vehicule::class,
                 'choice_label' => 'id'
