@@ -2,6 +2,7 @@
 
 namespace App\Form;
 
+use App\Entity\Chauffeur;
 use App\Entity\Vehicule;
 use Symfony\Bridge\Doctrine\Form\Type\EntityType;
 use Symfony\Component\Form\AbstractType;
@@ -36,7 +37,7 @@ class VehiculeType extends AbstractType
                 ],
             ])
             ->add('proprietaire', EntityType::class, [
-                'class' => Vehicule::class,
+                'class' => Chauffeur::class,
                 'choice_label' => 'id'
         ])
         ;
